@@ -1,0 +1,78 @@
+.Switch {
+  background-color: #bfbfbf;
+  min-width: 2.5em;
+  width: fit-content;
+  padding: 0.1em;
+  border-radius: 1em;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+  width: 5em;
+  height: 1.25em;
+}
+
+.Switch--inner-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.Switch--inner-container > * {
+  outline: 1px solid red;
+}
+
+.Switch:hover {
+  background-color: #8c8c8c;
+}
+.Switch.checked {
+  background-color: #1677ff;
+}
+.Switch.checked:hover {
+  background-color: #4096ff;
+}
+.Switch.disabled {
+  background-color: #d5d5d5;
+  cursor: not-allowed;
+}
+.Switch.disabled.checked {
+  background-color: #67a6ff;
+}
+
+.Switch.size--small {
+  font-size: 0.75em;
+}
+.Switch.size--large {
+  font-size: 1.25em;
+}
+
+.Switch--toggle-container {
+  display: flex;
+  justify-content: center;
+}
+
+.Switch--toggle {
+  background-color: white;
+  width: 1em;
+  height: 1em;
+  border-radius: 100%;
+  transition: margin-inline-start 0.3s;
+  margin-inline-start: 0;
+}
+
+.Switch--toggle {
+  margin: 0 0.25em;
+}
+
+.Switch.checked .Switch--status-text--on {
+  margin-inline-start: calc(-50% - 0.7em);
+}
+.Switch--status-text--on {
+  margin-inline-start: calc(50% - 2.2em);
+  transition: margin-inline-start 0.3s;
+}
+
+.Switch--status-text--on,
+.Switch--status-text--off,
+.Switch--toggle {
+  display: inline-block;
+  vertical-align: middle;
+}
