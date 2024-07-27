@@ -1,6 +1,6 @@
 # DIY Clone Ant Design Switch Component in React
 
-![200% enlarged demo](./demo/react-switch-component-demo-200x.webp)
+https://github.com/user-attachments/assets/6a4232e6-6e9b-4b26-8d53-76652cf5123e
 
 教學影片: https://youtu.be/RLZ6VhwFpSo
 
